@@ -9,7 +9,7 @@
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\cinema-cadaxa\references"
 
 # Clonar o repositório direto no diretório de skills
-git clone https://github.com/cadaxa/cinema-cadaxa "$env:USERPROFILE\.claude\skills\cinema-cadaxa"
+git clone https://github.com/Cadaxa/cinema-cadaxa "$env:USERPROFILE\.claude\skills\cinema-cadaxa"
 ```
 
 ### 2. Verificar a instalação

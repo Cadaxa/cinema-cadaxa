@@ -24,13 +24,13 @@ Gera prompts cinematográficos profissionais para **Veo 3.1**, **Seedance 2.0**,
 
 ```powershell
 # Criar diretório e clonar
-git clone https://github.com/cadaxa/cinema-cadaxa "$env:USERPROFILE\.claude\skills\cinema-cadaxa"
+git clone https://github.com/Cadaxa/cinema-cadaxa "$env:USERPROFILE\.claude\skills\cinema-cadaxa"
 ```
 
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/cadaxa/cinema-cadaxa ~/.claude/skills/cinema-cadaxa
+git clone https://github.com/Cadaxa/cinema-cadaxa ~/.claude/skills/cinema-cadaxa
 ```
 
 ### Verificar
@@ -100,5 +100,5 @@ Audita esse prompt e melhora: "man walking in city night"
 
 ## Créditos
 
-Criado por [Cadaxa](https://github.com/cadaxa).
+Criado por [Cadaxa](https://github.com/Cadaxa).
 Skill para [Claude Code](https://claude.ai/code) — Anthropic.
