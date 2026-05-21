@@ -3,12 +3,14 @@ name: cinema-cadaxa
 description: >
   Skill Cinema Cadaxa — Diretor, Roteirista e Editor de IA para geração de imagem e vídeo.
   Use quando o usuário pedir para criar, melhorar, auditar ou dividir prompts para geradores
-  de vídeo (Veo 3.1, Nano Banana Pro, Seedance 2.0, Kling, Runway, Sora) ou imagens (Nano Banana, GPT Image).
+  de vídeo (Veo 3.1, Nano Banana Pro, Seedance 2.0, Gemini Omni, Kling, Runway, Sora)
+  ou imagens (Nano Banana, GPT Image).
   Também cobre storyboards, listas de planos, tratamentos de diretor, montagem dinâmica,
   estrutura de história multi-clip, direção de câmera, iluminação, bloqueio, ritmo,
-  continuidade de personagem, diálogo e design de som.
+  continuidade de personagem, diálogo, design de som, style transfer e edição iterativa.
   Gatilho: "cria vídeo", "anima isso", "prompt para Veo", "prompt para Seedance",
-  "gera imagem", "storyboard", "cena cinematográfica", "iluminação", "câmera",
+  "prompt para Gemini Omni", "gera imagem", "storyboard", "cena cinematográfica",
+  "iluminação", "câmera", "style transfer", "anime style", "claymation",
   "cinema cadaxa", "/cinema".
 ---
 
@@ -38,11 +40,13 @@ Fórmula de cena. Lei dos Detalhes. Regra dos Três Jobs. Regra de Seis de Murch
 |---|---|
 | Veo, Google video, diálogo/lip-sync, JSON prompts, SFX sincronizado, nano-banana CLI, `--video`, `--duration` | [04-veo31-nano-banana.md](references/04-veo31-nano-banana.md) |
 | Seedance, ByteDance, multi-shot numa geração, `--camerafixed`, `--duration`, `@image1`, cortes rápidos de narrativa | [05-seedance2.md](references/05-seedance2.md) |
+| Gemini Omni, edição iterativa, style transfer (anime/clay/watercolor), world knowledge, input multimodal, Google Flow, Google AI Studio | [09-gemini-omni.md](references/09-gemini-omni.md) |
 | Geração de IMAGEM (foto, produto, portrait, editorial, storyboard, multi-panel) | [06-image-generation.md](references/06-image-generation.md) |
 
 Padrão se nada indica o modelo:
 - Multi-shot narrativo ou drama de montagem rápida → Seedance 2.0
 - Diálogo / polish comercial / SFX sincronizado → Veo 3.1 / Nano Banana Pro
+- Edição iterativa / style transfer / world knowledge → Gemini Omni
 - Imagem fotorrealista ou editorial → Nano Banana Pro
 - Imagem com texto preciso → GPT Image 2
 

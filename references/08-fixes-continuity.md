@@ -214,6 +214,42 @@ quality: [low / medium / high]
 size: [ex: 1536×1024]
 ```
 
+### Skeleton Gemini Omni — Prompt Inicial (Intent-First)
+
+```
+[INTENÇÃO DA CENA — o que está sendo criado e o propósito emocional]
+
+[SUJEITO/PERSONAGEM] — [aparência se relevante] — [ação concreta]
+[LOCALIZAÇÃO] — [ambiente + detalhe atmosférico + world knowledge se aplicável]
+
+Style: [estética visual + art movement ou técnica de estilo]
+Lighting: [fonte + qualidade + peso psicológico]
+Camera: [enquadramento + movimento + vocabulário Gemini Omni]
+```
+
+### Skeleton Gemini Omni — Edições Iterativas
+
+Após o prompt inicial ser gerado, refine com comandos cirúrgicos:
+
+```
+Edit 1 — substituição de elemento:
+"Change [X] to [Y] — same light, same camera, same action."
+
+Edit 2 — style transfer:
+"Apply [anime / claymation / watercolor / risograph] style — preserve character identity exactly."
+
+Edit 3 — câmera:
+"Switch to handheld drift — same scene, same light, more anxious feeling."
+
+Edit 4 — texto:
+"Add text: '[CONTEÚDO]' — [posição] — [tipografia] — appears at [X]s, stays for [Y]s."
+
+Edit 5 — atmosfera:
+"Add [elemento ambiental] to the background — keep subject in focus and unchanged."
+```
+
+**Regra de iteração:** Um elemento por edição. Múltiplas mudanças simultâneas produzem resultados imprevisíveis.
+
 ---
 
 ## 4. Ordem de Compressão de Prompt
@@ -291,8 +327,13 @@ Para estágio de conceito antes de qualquer prompt ser escrito:
 |---------------|-----|
 | Diálogo com lip-sync nativo e áudio sincronizado | **Veo 3.1** via Nano Banana Pro |
 | Multi-shot/montagem numa geração, narrativa curta | **Seedance 2.0** |
+| Edição iterativa — vou refinar o resultado várias vezes | **Gemini Omni** |
+| Style transfer (anime, claymation, watercolor, risograph...) | **Gemini Omni** |
+| World knowledge como atalho (histórico, cultural, científico) | **Gemini Omni** |
+| Input multimodal — combinar vídeo + imagem + áudio | **Gemini Omni** |
+| Text rendering animado com timing preciso | **Gemini Omni** |
 | Imagem fotorrealista com grounding de local real | **Nano Banana Pro** |
-| Imagem com texto preciso, infográfico | **GPT Image 2** |
+| Imagem com texto preciso one-shot, infográfico | **GPT Image 2** |
 | Imagem com ratio extremo (1:8, 8:1) | **Nano Banana Pro** |
 | Vídeo commercial polish de alto nível | **Veo 3.1** |
 | Vídeo UGC/social vertical | **Seedance 2.0** (9:16) |

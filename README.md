@@ -2,19 +2,22 @@
 
 **Diretor, Roteirista e Editor de IA** para geração de vídeo e imagem.
 
-Gera prompts cinematográficos profissionais para **Veo 3.1**, **Seedance 2.0**, **Nano Banana Pro** e **GPT Image 2** — com dramaturgia real, câmera motivada e continuidade de personagem.
+Gera prompts cinematográficos profissionais para **Veo 3.1**, **Seedance 2.0**, **Gemini Omni**, **Nano Banana Pro** e **GPT Image 2** — com dramaturgia real, câmera motivada, continuidade de personagem e edição iterativa.
 
 ---
 
 ## O que ela faz
 
-- Prompts texto-para-vídeo (Veo 3.1, Seedance 2.0, Kling, Runway, Sora)
+- Prompts texto-para-vídeo (Veo 3.1, Seedance 2.0, Gemini Omni, Kling, Runway, Sora)
 - Prompts imagem-para-vídeo (animação de frame estático)
 - Prompts de imagem (fotorrealista, editorial, produto, portrait)
 - Storyboards completos com card de plano de 14 campos
 - Tratamentos de diretor
 - Auditoria e correção de prompts quebrados
 - Sequências multi-clip com continuidade de personagem
+- Style transfer cinematográfico (anime, claymation, watercolor, risograph...)
+- Edição iterativa conversacional (Gemini Omni)
+- Input multimodal — combinar vídeo, imagem e áudio como referência
 
 ---
 
@@ -55,7 +58,7 @@ Adicione ao `CLAUDE.md` do seu projeto:
 # cinema-cadaxa
 - **cinema-cadaxa** (`~/.claude/skills/cinema-cadaxa/SKILL.md`) — Diretor Visual IA para geração de vídeo e imagem.
 When the user types `/cinema` or `/cinema-cadaxa`, invoke the Skill tool with `skill: "cinema-cadaxa"` before doing anything else.
-Also invoke when: "cria vídeo", "anima isso", "prompt para Veo", "prompt para Seedance", "gera imagem", "storyboard", "cena cinematográfica".
+Also invoke when: "cria vídeo", "anima isso", "prompt para Veo", "prompt para Seedance", "prompt para Gemini Omni", "gera imagem", "storyboard", "cena cinematográfica", "style transfer", "anime style", "claymation".
 ```
 
 ---
@@ -80,6 +83,14 @@ Gera um storyboard de 5 planos para um comercial de café
 Audita esse prompt e melhora: "man walking in city night"
 ```
 
+```
+Prompt Gemini Omni: uma mulher descobre que foi apagada de todas as fotos
+```
+
+```
+Style transfer anime: aplica no vídeo de apresentação do produto
+```
+
 ---
 
 ## Arquivos de Referência
@@ -95,6 +106,7 @@ Audita esse prompt e melhora: "man walking in city night"
 | `06-image-generation.md` | Guia geração de imagem fotorrealista |
 | `07-patterns-genres.md` | Padrões por gênero (comercial, clipe, drama, moda...) |
 | `08-fixes-continuity.md` | Correção de prompts e continuidade multi-clip |
+| `09-gemini-omni.md` | Guia Gemini Omni — intent-first, style transfer, edição iterativa |
 
 ---
 
